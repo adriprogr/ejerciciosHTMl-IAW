@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 9. Formularios</title>
+</head>
+<body>
+    <header>
+        <h1> Formulario personal</h1>
+    </header>
+    <main>
+        <label for="Nombre"> Nombre </label>
+        <input id="nombre" type="text" placeholder="Nombre" required>
+        <br><br>
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text" placeholder="Primer y segundo apellido" required>
+        <br><br>
+        <label id="Edad">Edad</label>
+        <input list="edad" placeholder="Selecciona una edad" required>
+        <datalist id="edad">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+        </datalist>
+        <br><br>
+        <label for="domicilio">Domicilio</label>
+        <input type="text" placeholder="Introduce el nombre del domicilio" required>
+        <br><br>
+        <label for="telefono">Numero de telefono</label>
+        <input type="tel" placeholder="Numero de telefono" required>
+        <br><br>
+        <label for="fecha">Fecha de relleno de formulario</label>
+        <input type="datetime-local" required>
+        <br><br>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" type="email" placeholder="Introduzca su correo electronico" required>
+        <br><br>
+        <label for="range"> Satisfaccion del formulario</label>
+        <input type="range" value="0" min="0" max="20" step="2" name="rango" id="rango" required>
+        <br><br>
+        <input type="submit" value="ENVIAR">
+    </main>
+</body>
+</html>
